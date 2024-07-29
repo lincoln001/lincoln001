@@ -1,2 +1,2 @@
 👋 Hi, I’m @lincoln001
-Using this space to host my portfolio and to experiment.
+Using this space to host to experiment.
