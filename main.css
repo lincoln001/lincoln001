@@ -1,0 +1,451 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***********************
+******** Global ********
+***********************/
+.clearfix {clear: both;height: 0;}
+.centered {text-align: center;}
+.strong {font-weight: bold;}
+.italic {font-style: italic;}
+
+
+#container {
+    width:100%;
+    min-width: 300px;
+    max-width:960px;
+    margin:0px auto;
+    height:auto;
+    background:#FFF;
+    overflow:hidden;
+    font-family: Helvetica, Arial;
+}
+
+/***********************
+******** Header ********
+***********************/
+#header {
+  display: block;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+}
+
+#logo {
+  display: block;
+  float: none;
+  margin: 0px auto 15px auto;
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+}
+
+#logo a img {
+  border:none;
+  max-width: 300px;
+}
+
+/***********************
+****** Navigation ******
+***********************/
+#nav {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  clear: both;
+  border-top: 2px solid #fefefe;
+  border-bottom: 2px solid #fefefe;
+}
+
+#nav ul {
+  font-size:0.8em;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+#nav ul li.controllers {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  width: 20%;
+  background-color: #000000;
+}
+
+#nav ul li.games,
+#nav ul li.consoles,
+#nav ul li.headsets,
+#nav ul li.accessories,
+#nav ul li.merch {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  width: 16%;
+  background-color: #000000;
+}
+
+#nav ul li a {
+  display: block;
+  padding: 12px 2%;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+}
+
+#nav ul li a:hover {
+  color: #000000;
+  background-color: #fefefe;
+}
+
+#nav ul li.games a,
+#nav ul li.consoles a,
+#nav ul li.controllers a,
+#nav ul li.headsets a,
+#nav ul li.accessories a {
+  border-right: 2px solid #fefefe;
+}
+
+@media only screen and (max-width:780px) {
+  #nav ul li.controllers,
+  #nav ul li.games,
+  #nav ul li.consoles,
+  #nav ul li.headsets,
+  #nav ul li.accessories,
+  #nav ul li.merch {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    width: 33.3%;
+    background-color: #000000;
+  }
+
+  #nav ul li.games a,
+  #nav ul li.consoles a,
+  #nav ul li.headsets a,
+  #nav ul li.accessories a {
+    border-right: 2px solid #fefefe;
+  }
+
+  #nav ul li.merch a,
+  #nav ul li.controllers a {
+    border-right: none;
+  }
+
+  #nav ul li.games a,
+  #nav ul li.consoles a,
+  #nav ul li.controllers a {
+    border-bottom: 2px solid #fefefe;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  #nav ul li.games,
+  #nav ul li.consoles,
+  #nav ul li.controllers,
+  #nav ul li.headsets,
+  #nav ul li.accessories,
+  #nav ul li.merch {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    background-color: #000000;
+  }
+
+  #nav ul li.games a,
+  #nav ul li.consoles a,
+  #nav ul li.controllers a,
+  #nav ul li.headsets a,
+  #nav ul li.merch a,
+  #nav ul li.accessories a {
+    border-bottom: 2px solid #fefefe;
+  }
+
+  #nav ul li.games a,
+  #nav ul li.controllers a,
+  #nav ul li.accessories a {
+    border-right: 2px solid #fefefe;
+  }
+
+  #nav ul li.consoles a,
+  #nav ul li.headsets a,
+  #nav ul li.merch a {
+    border-right: none;
+  }
+}
+
+/***********************
+***** Main Image ******
+***********************/
+#main {
+  
+}
+
+
+
+
+/***********************
+******* Item Info ******
+***********************/
+#itemInfo {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+
+/***********************
+**** Item Info Tech ****
+***********************/
+#itemInfo.tech {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#itemInfo.tech .top {
+  display: block;
+  width: 98%;
+  padding: 20px 1% 30px 1%;
+  text-align: center;
+  font-size: 1.250em;
+}
+
+#itemInfo.tech .left {
+  display: inline-block;
+  width: 47%;
+  padding: 0px 0% 0px 1%;
+  float: left;
+}
+
+#itemInfo.tech .right {
+  display: inline-block;
+  width: 47%;
+  padding: 0px 1% 0px 0%;
+  float: right;
+}
+
+@media only screen and (max-width:600px) {
+  #itemInfo.tech .left {
+    display: inline-block;
+    width: 98%;
+    padding: 0px 1% 0px 1%;
+  }
+
+  #itemInfo.tech .right {
+    display: inline-block;
+    width: 98%;
+    padding: 0px 1% 0px 1%;
+  }
+}
+
+#itemInfo.tech h2 {
+  font-size: 1.250em;
+  color: #000000;
+  margin-top: 0px;
+}
+
+#itemInfo.tech ul li {
+  padding-bottom: 15px;
+}
+
+#itemInfo.tech ul.tick li {
+  list-style-type: none;
+  margin-left: -10px;
+}
+
+#itemInfo.tech ul.tick li::before {
+  content: "✓";
+  position: relative;
+  left: -10px;
+}
+
+/***********************
+***** Free Delivery ****
+***********************/
+#freeDelivery {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  text-align: center;
+}
+
+#freeDelivery p {
+  color: #FFF;
+  font-size: 1.5em;
+  padding: 20px 0px;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+
+/***********************
+****** Bottom Ads ******
+***********************/
+#bottomLinks {
+  display: block;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+
+#bottomLinks a {
+  display: block;
+  float: left;
+  width: 23%;
+  padding: 0px 1%;
+  margin-bottom: 15px;
+}
+
+#bottomLinks a:hover {
+  opacity: 0.8;
+}
+
+#bottomLinks a img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media only screen and (max-width:600px) {
+  #bottomLinks a {
+    display: block;
+    float: left;
+    width: 48%;
+    padding: 0px 1%;
+    margin-bottom: 10px;
+  }
+}
+
+/***********************
+****** Newsletter ******
+***********************/
+#newsletter {
+  display: block;
+  width: 100%;
+  margin: 20px 0px;
+  background-color: #333;
+}
+
+#newsletter p.dontmissout {
+  display: inline-block;
+  float: left;
+  width: 60%;
+  color: #fefefe;
+  padding: 0px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: left;
+  margin: 20px 1% 20px 4%;
+}
+
+#newsletter .right {
+  display: inline-block;;
+  float: right;
+  width: 34%;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+#newsletter .right a.signup {
+  display: inline-block;
+  background-color: #00537E;
+  color: #FFF;
+  padding: 10px 15px 10px 15px;
+  margin: 0px 50px 0px 0px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  float: left;
+  width: 130px;
+}
+
+@media only screen and (max-width:620px) {
+  #newsletter p.dontmissout {
+    width: 45%;
+  }
+  #newsletter .right  {
+    width: 50%;
+  }
+}
+
+/***********************
+******** Footer ********
+***********************/
+#footer {
+  display: block;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+  border-top: #333 solid 1px;
+  border-bottom: #333 solid 1px;
+}
+
+#footer a.logo {
+  float: left;
+  display: inline-block;
+  /*width: 144px;
+  height: 41px;*/
+  padding: 4px 0px 4px 0px;
+}
+
+#footer a.logo img {
+  border: none !important;
+  max-width: 200px;
+}
+
+@media only screen and (max-width:620px) {
+  #footer a.logo {
+    float: none !important;
+    margin: auto !important;
+    padding: 8px 0px !important;
+    display: block !important;
+    text-align: center;
+  }
+}
+
+#footer ul.rightnav {
+  display: inline-block;
+  float: right;
+  padding: 0px;
+  margin: 10px auto 10px auto;
+}
+
+@media only screen and (max-width:620px) {
+  #footer ul.rightnav {
+    width: 100%;
+    clear: left;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+  }
+  #footer ul.rightnav li {
+    float: none !important
+  }
+  #footer ul.rightnav li.delivery {
+    border-left: none !important;
+  }
+}
+
+#footer ul.rightnav li {
+  list-style: none;
+  display: inline-block;
+  float: right;
+}
+
+#footer ul.rightnav li.delivery,
+#footer ul.rightnav li.faqs,
+#footer ul.rightnav li.contact,
+#footer ul.rightnav li.about {
+  border-left: 1px solid #333;
+}
+
+#footer ul.rightnav li a {
+  display: block;
+  padding: 5px 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.850em;
+}
